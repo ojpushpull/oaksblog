@@ -1,6 +1,6 @@
 ---
 title: Starting a Development Service
-date: 2023-2-7
+date: 2023-02-07
 description: Planning out a web development service
 tag: web development
 author: Okera Johnson
