@@ -4,6 +4,7 @@ import Head from 'next/head'
 import '../styles/main.css'
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -23,8 +24,11 @@ export default function App({ Component, pageProps }: AppProps) {
           crossOrigin="anonymous"
         />
       </Head>
-     Subscribe <MailchimpSubscribe className="mailbox" url={process.env.REACT_APP_MAILCHIMP_URL} />
+      <div className="mailbox">
+      Newsletter Signup<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL}/>
+     </div>
       <Component {...pageProps} />
+      
      
     </>
   )

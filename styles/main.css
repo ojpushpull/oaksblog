@@ -65,10 +65,13 @@ img.next-image {
 }
 
 .mailbox {
-  position: absolute;
-  left: 60;
-  top: 90;
-  border-style: dotted solid double;
-  border-color: #0074de;
-  border-width: 6px;
+  box-shadow: 0px 11px 13px -9px rgba(141, 141, 141, 0.75);
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+  border: 5px solid gray;
+  background-color: darkcyan;
+  margin: 0;
+  position: fixed;
 }

@@ -1,4 +1,4 @@
-
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 const YEAR = new Date().getFullYear()
 
@@ -20,4 +20,8 @@ export default {
       `}</style>
     </footer>
   ),
+  main: {
+    children: <MailchimpSubscribe className="mailbox"></MailchimpSubscribe>
+   
+  } 
 }
