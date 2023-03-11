@@ -16,7 +16,7 @@ Step 1) Setup an account with Mailchimp https://mailchimp.com/
 
 Step 2) Inside Mailchimp go to the dashboard and choose signup forms and from there pick up embedded forms. 
 
-Step 3) Inside the embedded form code copy the url within the parenthesis that is within the tag named <form action=“ https://URL” />
+Step 3) Inside the embedded form code copy the url within the parenthesis that is within the tag named "form action"
 
 Step 4) In the root of your react project create a file named .env and within that create a variable named REACT_APP_MAILCHIMP_URL and assign the copied url to the variable
 
@@ -25,6 +25,6 @@ Step 5) Now in your terminal type in rpm install react-mailchimp-subscribe
 Step 6) Now in the file with your react component tree usually your app.js file Import MailchimpSubscribe from react-mailchimp-subscribe
 
 Step 7) Inside your app component tree call MailchimpSubscribe and pass the data from your .env file to the component here is an example of how it will look 
-<MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL}/>
+
 
 And boom that’s it you should have a working email capture form now. The one I have running on this website was implemented following these exact same steps so do me a favor test it out by entering your email in the box just to make sure its working.
